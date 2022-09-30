@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Storage Tweet</title>
+    <link rel="stylesheet" href="../src/style/style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container-main">
+        <h1>LOCAL STORAGE</h1>
+        <div class="container-tweet">
+          <label for="tweet" class="label-tweet">Tweet: </label>
+          <form id="formulario">
+            <label for="tweet"></label>
+            <textarea id="tweet" class="contain-tweet"></textarea>
+            <input type="submit" class="btn-add" value="Agregar" />
+          </form>
+        </div>
+        <div class="container-myTweets">
+          <h2>Mis Tweets</h2>
+          <div id="list-tweets"></div>
+        </div>
+      </div>
+    </main>
+    <script src="../src/index.js"></script>
+  </body>
+</html>

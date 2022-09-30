@@ -1,0 +1,124 @@
+:root {
+    --almostWhite: #fafafa;
+    --mediumGray: hsl(0, 3%, 64%);
+    --almostBlack: hsl(0, 0%, 8%);
+    --backroundBody: rgb(253, 242, 226);
+    --btnPrimary: #33C3F0;
+
+}
+
+/* generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Raleway",
+        "HelveticaNeue",
+        "Helvetica Neue",
+        Helvetica,
+        Arial,
+        sans-serif;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background: var(--backroundBody);
+}
+
+
+.container-main {
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+h1,
+h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 3.6rem;
+    margin-top: 40px;
+}
+
+.container-tweet {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+
+}
+
+label {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.contain-tweet {
+    margin-top: 10px;
+    width: 100%;
+    height: 80px;
+    border: 1px solid var(--mediumGray);
+}
+
+.contain-tweet:focus {
+    border: 2px solid var(--btnPrimary);
+    outline: none;
+    /*para quitar el border por defecto*/
+}
+
+.btn-add {
+    width: 100%;
+    color: var(--almostWhite);
+    font-size: 1.8rem;
+    border: 1px solid var(--btnPrimary);
+    background-color: var(--btnPrimary);
+    padding: 5px;
+    margin-top: 10px
+}
+
+@media (min-width: 600px) {
+    .container-main {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px auto;
+        align-items: unset;
+
+    }
+
+    h1 {
+
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    }
+
+    h2 {
+
+        margin-top: 0px;
+    }
+
+    .container-tweet {
+        grid-column: 1/ 2;
+        grid-row: 2 / 3;
+
+    }
+
+    .container-myTweets {
+        /* width: 50%; */
+        grid-column: 2/3;
+        grid-row: 2 / 2;
+    }
+}
