@@ -81,12 +81,52 @@ label {
 
 .btn-add {
     width: 100%;
-    color: var(--almostWhite);
     font-size: 1.8rem;
+    margin-top: 10px;
+    padding: 5px;
+    color: var(--almostWhite);
     border: 1px solid var(--btnPrimary);
     background-color: var(--btnPrimary);
+    cursor: pointer;
+}
+
+.btn-add:hover {
+    background-color: #2083a1;
+}
+
+
+.error {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--almostWhite);
+    background-color: red;
+}
+
+#list-tweets {
+    margin: 5px 20px;
+}
+
+#list-tweets li {
+    width: 100%;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.borrar-tweet {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
     padding: 5px;
-    margin-top: 10px
+    color: red;
+    background-color: bisque;
+    border-radius: 50%;
+    word-break: break-all;
 }
 
 @media (min-width: 600px) {
